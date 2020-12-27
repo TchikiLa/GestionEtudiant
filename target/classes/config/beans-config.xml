@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+		
+	<bean id="assisterDao" class="com.etudiant.mvc.dao.impl.Impl_assisterDAO"/>
+	<bean id="assisterservice" class="com.etudiant.mvc.services.impl.Impl_Assister_Service">
+		<property name="dao" ref="assisterDao"></property>
+	</bean>
+	
+	<bean id="chapitreDao" class="com.etudiant.mvc.dao.impl.Impl_chapitreDAO"/>
+	<bean id="chapitreservice" class="com.etudiant.mvc.services.impl.Impl_Chapitre_Service">
+		<property name="dao" ref="chapitreDao"></property>
+	</bean>
+	
+	<bean id="contenirDao" class="com.etudiant.mvc.dao.impl.Impl_contenirDAO"/>
+	<bean id="contenirservice" class="com.etudiant.mvc.services.impl.Impl_Contenir_Service">
+		<property name="dao" ref="contenirDao"></property>
+	</bean>
+	
+	<bean id="coursDao" class="com.etudiant.mvc.dao.impl.Impl_coursDAO"/>
+	<bean id="coursservice" class="com.etudiant.mvc.services.impl.Impl_Cours_Service">
+		<property name="dao" ref="coursDao"></property>
+	</bean>
+	
+	<bean id="enseignantDao" class="com.etudiant.mvc.dao.impl.Impl_enseignantDAO"/>
+	<bean id="enseignantservice" class="com.etudiant.mvc.services.impl.Impl_Enseignant_Service">
+		<property name="dao" ref="enseignantDao"></property>
+	</bean>
+	
+	<bean id="enseignerDao" class="com.etudiant.mvc.dao.impl.Impl_enseignerDAO"/>
+	<bean id="enseignerservice" class="com.etudiant.mvc.services.impl.Impl_Enseigner_Service">
+		<property name="dao" ref="enseignerDao"></property>
+	</bean>
+	
+	<bean id="etudiantDao" class="com.etudiant.mvc.dao.impl.Impl_etudiantDAO"/>
+	<bean id="etudiantservice" class="com.etudiant.mvc.services.impl.Impl_Etudiant_Service">
+		<property name="dao" ref="etudiantDao"></property>
+	</bean>
+	
+	<bean id="examainDao" class="com.etudiant.mvc.dao.impl.Impl_examainDAO"/>
+	<bean id="examainservice" class="com.etudiant.mvc.services.impl.Impl_Examain_Service">
+		<property name="dao" ref="examainDao"></property>
+	</bean>
+	
+	<bean id="formationDao" class="com.etudiant.mvc.dao.impl.Impl_formationDAO"/>
+	<bean id="formationservice" class="com.etudiant.mvc.services.impl.Impl_Formation_Service">
+		<property name="dao" ref="formationDao"></property>
+	</bean>
+	
+	<bean id="moduleDao" class="com.etudiant.mvc.dao.impl.Impl_moduleDAO"/>
+	<bean id="moduleservice" class="com.etudiant.mvc.services.impl.Impl_Module_Service">
+		<property name="dao" ref="moduleDao"></property>
+	</bean>
+	
+	<bean id="quizDao" class="com.etudiant.mvc.dao.impl.Impl_quizDAO"/>
+	<bean id="quizservice" class="com.etudiant.mvc.services.impl.Impl_Quiz_Service">
+		<property name="dao" ref="quizDao"></property>
+	</bean>
+
+</beans>
